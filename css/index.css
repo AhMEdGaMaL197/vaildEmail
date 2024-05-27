@@ -1,0 +1,82 @@
+::selection {
+    background-color: #fec260;
+    color: #352e28;
+}
+.main{
+    min-height: 100vh;
+    background-color: #f7ecde;
+    position: relative;
+}
+.main .h{
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+    color: #352e28;
+    isolation: isolate;
+    position: relative;
+    
+}
+.main .h::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    left: 0;
+    bottom: 10px;
+    background-color: #fec260;
+    transition: all 350ms;
+    z-index: -1;
+}
+.main .h:hover::before {
+    height: 50%;
+}
+.main .box{
+    border-width: 2px 0 2px 0;
+    border-style: dotted;
+    border-color: #352e28;
+}
+.book{
+    color: #40A55C;
+}
+.overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+}
+
+.box-conent {
+    width: 500px;
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    
+}
+
+.circles span {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+.circles span:nth-child(1) {
+    background-color: #f15f5d;
+}
+.circles span:nth-child(2) {
+    background-color: #febe2e;
+}
+.circles span:nth-child(3) {
+    background-color: #4db748;
+}
+.box-conent p {
+    font-family: "Bree Serif", serif;
+    font-size: 21px;
+    line-height: 1.3;
+    color: #352e28;
+}
+.rules i {
+    color: #bb4120;
+}
